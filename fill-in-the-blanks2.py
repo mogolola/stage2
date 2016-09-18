@@ -1,5 +1,5 @@
 import os
-def make_choice():
+def make_choice():       #this function has no inputs, simply start the game and let the users select the object of the fill-in-blank game.
     user_choice=raw_input("Hi there, this is a fill-in-blank game, There are 3 objuects, it's all about video games and you can choose one to play on. For 'halo' please choose 1 ,for 'uncharted' choose 2 , for 'the lengends of zelda' choose 3")
     if user_choice==str(1):
         play_game(halo_answers,halo_text)
@@ -49,7 +49,7 @@ zelda_answers=["Nintendo","Link","Princess Zelda","Ganon"]
 zelda_text='''The Legend of Zelda is a high-fantasy action-adventure video game series published by __1__. The series centers on __2__, the playable character and chief protagonist. __2__ is often given the task of rescuing __3__ and the kingdom of Hyrule from __4__. The games' plots commonly involve a relic known as the Triforce, a set of three omnipotent golden triangles. The protagonist in each game is usually not the same incarnation of __2__, but a few exceptions exist.'''
 
 
-def play_game(answers,text):
+def play_game(answers,text):     #According to the selection made by users this function will have different inputs. The main purpose of this function is to proceed the process of the game with a subject. within the function there are several other functions being quoted.
     print 'You will get 4 guesses about a famous video game'
     count=0
     error_limit=4
